@@ -68,6 +68,23 @@ bool j1App::Awake()
 	// the top tag inside the xml_node property created in the last TODO
 	// ---
 
+	char* buffer;
+
+	fs->Load("xmlconfig/xmlconfig.xml/config.xml", &buffer);
+
+	pugi::xml_parse_result result = xmldoc.load_buffer(buffer, strlen(buffer));
+
+	if (result) {
+		xmlnode = xmldoc.first_child();
+		LOG("xmldoc loading buffer success!");
+	}
+	else {
+		LOG("xmldoc loading buffer error");
+		LOG("%s", result.description());
+	}
+
+	RELEASE(buffer);
+
 	p2List_item<j1Module*>* item;
 	item = modules.start;
 
