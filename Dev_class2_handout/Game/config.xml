@@ -1,0 +1,14 @@
+<?xml version "1.0" encoding = "utf-8"?>
+
+<config>
+  <name>My Project</name>
+  <fullscreen>0</fullscreen>  
+  <borderless>0</borderless> 
+  <resizable>0</resizable>
+  <fullscr_windowed>0</fullscr_windowed>
+  <screen_width>640</screen_width>
+  <screen_height>480</screen_height>
+  <scale> </scale>
+  <organization>My Awesome Studio</organization>
+  <appname>My Project!</appname>
+</config>

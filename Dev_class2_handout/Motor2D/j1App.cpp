@@ -70,7 +70,7 @@ bool j1App::Awake()
 
 	char* buffer;
 
-	fs->Load("xmlconfig/xmlconfig.xml/config.xml", &buffer);
+	fs->Load("config.xml", &buffer);
 
 	pugi::xml_parse_result result = xmldoc.load_buffer(buffer, strlen(buffer));
 

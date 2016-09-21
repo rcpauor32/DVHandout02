@@ -62,7 +62,7 @@ inline const char* const PATH(const char* folder, const char* file)
 // Conf
 
 // TODO 6: Improve config.xml to store all configuration variables that we have as macros
-// Use a section with the name of each module (see Module::name)
+// Use a section with the name of each module (see Module::name) 
 #define R_FULLSCREEN false
 #define R_BORDERLESS false
 #define R_RESIZABLE false
